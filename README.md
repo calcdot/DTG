@@ -30,7 +30,7 @@ Build container from path where Dockerfile is stored :
 docker build --tag forensiccontainer:1.0 .
 ```
 
-Run container that listens to localhost :
+Run container with services that listens to localhost :
 
 ```
 docker run -d -p 127.0.0.1:4200:4200 -p 127.0.0.1:9090:9090 --name malware forensiccontainer:1.0
