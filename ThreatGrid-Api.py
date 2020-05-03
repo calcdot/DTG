@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+
+#================================
+# Description:
+#  Threat-Grid REST Api script.
+#
+# Author:
+#  Slaven Vukcevic
+#================================
+
 import inquirer
 import requests
 import json
