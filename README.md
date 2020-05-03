@@ -16,7 +16,7 @@ Docker
 Python3
 ```
 
-### Installing
+### Building and running docker image 
 
 Start docker daemon service :
 
