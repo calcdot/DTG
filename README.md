@@ -3,6 +3,9 @@
 Project aiming to improve interaction with Threat Grid and expand on your static analyses capabilityes.
 (Threat Grid script can be used as standalone tool outside of Docker build.)
 
+Docker image is basic build containing only "Shellinabox" webshell and Radare2 (with Web-Ui).
+Feel free to add your tools to Dockerfile within RUN trough pip3, apt-get or git.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine. 
