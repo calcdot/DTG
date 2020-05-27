@@ -44,7 +44,7 @@ Test run radare webserver on 9090 port that we mapped in container run :
 r2 -e http.bind=0.0.0.0 -c='H' /path/sample.exe
 ```
 
-Stopping container -
+Stopping container :
 
 ```
 docker stop malware ; docker rm malware
