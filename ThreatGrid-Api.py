@@ -8,6 +8,8 @@
 #  Slaven Vukcevic
 #================================
 
+from tkinter import *
+from tkinter import filedialog
 import inquirer
 import requests
 import json
@@ -50,11 +52,14 @@ class REquest():
 		sample_url = input('Url : '); parameters = {'api_key': api_key, 'url': sample_url, 'private': True}
 		subMit(sampleFile, parameters)
 	def SubFile():
-		file_name = input('File Path : ')
-		with open(file_name, 'rb') as sample:
+		root = Tk()
+		root.withdraw()
+		root.filename = filedialog.askopenfilename(initialdir="~/Downloads", title="Select sample for upload.")
+		with open(root.filename, 'rb') as sample:
 			sampleFile = {'sample': sample}
 			parameters = {'api_key': api_key, 'private': True}
 			subMit(sampleFile, parameters)
+		root.mainloop()
 	def getFileSample():
 		global samplesURL
 		file_name = input(' File ID : ') + '/sample.zip'
